@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+#navbar a {
+  float: left;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 10%;
+  text-align: center;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.column {
+  float: left;
+  padding: 5px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 17%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 83%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.content {
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>&#128204; My Saved Things</h2>
+</div>
+
+<div id="navbar">
+  <a href="#" style="background: #40a4d8"><i class='fas fa-angle-up'></i> Top</a>
+  <a href="#politics" style="background: #33beb8;">Politics</a>
+  <a href="#computing" style="background: #b2c225">Computing</a>
+  <a href="#art" style="background: #fecc2f">Art</a>
+  <a href="#fun" style="background: #f9a228">Fun</a>
+  <a href="#history" style="background: #f6621f">History</a>
+  <a href="#worldbuilding" style="background: #db3838">Worldbuilding</a>
+  <a href="#tech" style="background: #ee657a">Tech</a>
+  <a href="#" style="background: #a363d9">Link</a>
+  <a href="#" style="background: #40a4d8">Link</a>
+</div>
+
+<div class="content">
+<div class="content">
+<div class="row">
+
+
+<div class="column middle">
+    <p>&#127468;&#127463;<b> Language</b></p>
+<ul>
+  <li id="politics">BBC Culture - How Americanisms Are Killing The English Language </br>{<a href="https://www.bbc.com/culture/article/20170904-how-americanisms-are-killing-the-english-language">https://www.bbc.com/culture/article/20170904-how-americanisms-are-killing-the-english-language</a>}</li>
+<li style="color: transparent" id="politics"></li>
+</ul>  
+
+<p>🏛️<b> Politics</b></p>
+<ul>
+  <li><i>The Guardian</i> - John Crace </br>{<a href="https://www.theguardian.com/profile/johncrace">https://www.theguardian.com/profile/johncrace</a>}</li>
+  <li>The Good Law Project </br>{<a href="https://goodlawproject.org/">https://goodlawproject.org/</a>}</li>
+  <li>OpenDemocracy </br>{<a href="https://www.opendemocracy.net/en/uk/">https://www.opendemocracy.net/en/uk/</a>}</li>
+  <li>Mark Steel - <i>The Mirror</i> </br>{<a href="https://www.mirror.co.uk/authors/mark-steel/">https://www.mirror.co.uk/authors/mark-steel/</a>}</li>
+  <li>Archbishop of Canterbury's Speech in the House of Lords regarding Migration </br>{<a href="https://www.parliamentlive.tv/Event/Index/91248505-eb7b-41b9-9416-ece71c8f4a39/">https://www.parliamentlive.tv/Event/Index/91248505-eb7b-41b9-9416-ece71c8f4a39</a>}</li>
+  <li>Parliament Live </br>{<a href="https://parliamentlive.tv/Commons">https://parliamentlive.tv/Commons</a>}</li>
+
+<li style="color: transparent" id="computing"></li>
+</ul>  
+
+<p>💻<b> Computing</b></p>
+<ul>
+  <li>Bleeping Computer </br>{<a href="https://www.bleepingcomputer.com/">https://www.bleepingcomputer.com/</a>}</li>
+<li style="color: transparent" id="art"></li>
+</ul>  
+
+<p>🎨<b> Art</b></p>
+<ul>
+  <li>A-Z of Sketchbook Tips </br>{<a href="https://design.tutsplus.com/articles/a-to-z-of-sketchbook-pro-tips-tricks-and-hacks--cms-38283">https://design.tutsplus.com/articles/a-to-z-of-sketchbook-pro-tips-tricks-and-hacks--cms-38283</a>}</li>
+  <li>Highlighted Areas With Links on Responsive Image  </br>{<a href="https://researchasahobby.com/highlighted-areas-links-responsive-image-free-svg-wp/">https://researchasahobby.com/highlighted-areas-links-responsive-image-free-svg-wp/</a>}</li>
+<li style="color: transparent" id="fun"></li>
+</ul>  
+
+<p>🎉<b> Fun</b></p>
+<ul>
+  <li>Find A Random Website </br>{<a href="https://random-website.com/">https://random-website.com/</a>}</li>
+<li style="color: transparent" id="history"></li>
+</ul>  
+
+<p>🏛️<b> Heritage/History</b></p>
+<ul>
+  <li>The long after-life of Christopher Wren's short-lived London plan of 1666 </br>{<a href="https://discovery.ucl.ac.uk/id/eprint/10081417/1/Hebbert_PP%20Wren%20ms_.pdf">https://discovery.ucl.ac.uk/id/eprint/10081417/1/Hebbert_PP%20Wren%20ms_.pdf</a>}</li>
+  <li>Colonialism: A Moral Reckoning </br>{<a href="https://archive.ph/o0Ex8#selection-1343.5-1343.17f">https://archive.ph/o0Ex8#selection-1343.5-1343.17</a>}</li>
+  <li>RIBA - Rebuilding After The Great Fire </br>{<a href="http://web.archive.org/web/20120707041304/http://www.architecture.com/LibraryDrawingsAndPhotographs/OnlineWorkshops/UrbanAdventures/01Wren.aspx">http://web.archive.org/web/20120707041304/http://www.architecture.com/LibraryDrawingsAndPhotographs/OnlineWorkshops/UrbanAdventures/01Wren.aspx</a>}</li>
+  <li>The Study-book of Mediæval Architecture and Art  </br>{<a href="https://www.amazon.com/Study-book-Medi%C3%A6val-Architecture-Art/dp/B09Q2L8N2S">https://www.amazon.com/Study-book-Medi%C3%A6val-Architecture-Art/dp/B09Q2L8N2S</a>}</li>
+  <li>Architect Job (Historic England)  </br>{<a href="https://app.beapplied.com/apply/g5uemvizv1">https://app.beapplied.com/apply/g5uemvizv1</a>}</li>
+  <li>Drawing Old Buildings For Understanding  </br>{<a href="https://historicengland.org.uk/images-books/publications/drawing-for-understanding/heag119-drawing-for-understanding/">https://historicengland.org.uk/images-books/publications/drawing-for-understanding/heag119-drawing-for-understanding/</a>}</li>
+
+<li style="color: transparent" id="worldbuilding"></li>
+</ul>  
+
+<p>🌍<b> Worldbuilding</b></p>
+<ul>
+  <li>Watabou's One Page Dungeons </br>{<a href="https://watabou.github.io/one-page-dungeon/">https://watabou.github.io/one-page-dungeon/</a>}</li>
+<li style="color: transparent" id="tech"></li>
+</ul>  
+
+<p>🤖<b> Technology/AI</b></p>
+<ul>
+  <li>Samsung Galaxy A53 128GB (eBay) </br>{<a href="https://www.ebay.co.uk/p/12056433824?iid=225466880321">https://www.ebay.co.uk/p/12056433824?iid=225466880321</a>}</li>
+<li style="color: transparent" id=""></li>
+</ul>  
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
