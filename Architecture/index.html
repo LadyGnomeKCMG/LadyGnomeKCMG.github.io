@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 20px;
+  padding-right: 9px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Architecture</h2>
+</header>
+
+<section>
+  <article>
+    <h1 style="margin: 1%">&#128204; My Architectural Pinboard</h1>
+    </br>
+    <h4 style="margin: 1%">&#9734; Favourite Pages:</h4>
+    <center>
+    <a href="">
+    <div style="background-color: #db3838; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold;"><p1>Architectural News</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: #f6621f; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold;"><p1>Edwardian Architecture</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: #f9a228; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold;"><p1>Victorian Architecture</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: #b2c225; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold;"><p1>Books</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: #40a4d8; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold;"><p1>Architectural News</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: #a363d9; width: 30%; padding: 2%; color: white; text-align: center; float: left; margin: 1%; margin-bottom: 5%; cursor: pointer; font-weight: bold;"><p1>Architectural News</p1></div>
+    </a>
+</br></br>
+</center>
+    <h4 style="margin: 1%">&#128279; Quick Links:</h4>
+    <center>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #db3838; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold; border: 3px solid #db3838;"><p1>Architectural News</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #40a4d8; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold; border: 3px solid #40a4d8;"><p1>Edwardian Architecture</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #db3838; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold; border: 3px solid #db3838;"><p1>Victorian Architecture</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #40a4d8; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold; border: 3px solid #40a4d8;"><p1>Books</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #db3838; text-align: center; float: left; margin: 1%; cursor: pointer; font-weight: bold; border: 3px solid #db3838;"><p1>Architectural News</p1></div>
+    </a>
+    <a href="">
+    <div style="background-color: transparent; width: 30%; padding: 2%; color: #40a4d8; text-align: center; float: left; margin: 1%; margin-bottom: 5%; cursor: pointer; font-weight: bold; border: 3px solid #40a4d8;"><p1>Architectural News</p1></div>
+    </a>
+</br></br>
+</center>
+    <p style="margin: 1%">Yadda yadda yadda.</p>
+    <p style="margin: 1%">etc. etc. etc.</p>
+  </article>
+
+  <nav>
+    <ul>
+      <li><center><b style="text-align: center; font-size: 18px;">Architectural Timeline</b></center></li></br>
+      <li style="padding:3%;"><a href="#">Modern</a></li>
+      <li style="text-indent: 10%;">1918 - Present</li>
+      <li style="padding:3%;"><a href="#">Edwardian</a></li>
+      <li style="text-indent: 10%;">1901 - 1918</li>
+      <li style="padding:3%;"><a href="#">Victorian</a></li>
+      <li style="text-indent: 10%;">1837 - 1901</li>
+      <li style="padding:3%;"><a href="#">Regency</a></li>
+      <li style="text-indent: 10%;">1811 - 1820</li>
+      <li style="padding:3%;"><a href="#">Georgian</a></li>
+      <li style="text-indent: 10%;">1714 - 1837</li>
+      <li style="padding:3%;"><a href="#">Palladian</a></li>
+      <li style="text-indent: 10%;">1715 - 1770</li>
+      <li style="padding:3%;"><a href="#">Queen Anne/English Baroque</a></li>
+      <li style="text-indent: 10%;">1702 - 1714</li>
+      <li style="padding:3%;"><a href="#">Jacobean</a></li>
+      <li style="text-indent: 10%;">1603 - 1625</li>
+      <li style="padding:3%;"><a href="#">Stuart</a></li>
+      <li style="text-indent: 10%;">1603 - 1714</li>
+      <li style="padding:3%;"><a href="#">Elizabethan</a></li>
+      <li style="text-indent: 10%;">1550 - 1625</li>
+      <li style="padding:3%;"><a href="#">Tutor</a></li>
+      <li style="text-indent: 10%;">1485 - 1603</li>
+      <li style="padding:3%;"><a href="#">English Perpendicular Gothic (Late Gothic)</a></li>
+      <li style="text-indent: 10%;">1300s - 1500s</li>
+      <li style="padding:3%;"><a href="#">Medieval</a></li>
+      <li style="text-indent: 10%;">1066 - 1485</li>
+      <li style="padding:3%;"><a href="#">Anglo Saxon</a></li>
+      <li style="text-indent: 10%;">410 - 1066</li>
+      <li style="padding:3%;"><a href="#">Roman</a></li>
+      <li style="text-indent: 10%;">pre 410</li>
+
+    </ul>
+  </nav>
+  
+</section>
+<footer style="background-color: #e7e9eb; color: black;">
+  <p style="text-align: left; padding-left: 8%;">Page Sources</p>
+  <hr align="left" width="40%" style="margin-left: 8%;">
+  <p style="text-align: left; padding-left: 12%; font-size: 12px;"><i>English architectural stylistic periods.</i> Retrieved March 9, 2023, from <a href="https://www.designingbuildings.co.uk/wiki/English_architectural_stylistic_periods">https://www.designingbuildings.co.uk/wiki/English_architectural_stylistic_periods</a></p>
+</footer>
+
+<footer>
+  <p>Site by Caleb O'Connell &bull; 2023</p>
+</footer>
+
+</body>
+</html>
+
